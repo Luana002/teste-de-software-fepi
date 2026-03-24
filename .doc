@@ -1,0 +1,45 @@
+========Documentação de Desenvolvimento do Sistema=========
+Sistema de Locação de Veículos
+____________________________________________________________________________
+O sistema permite realizar as seguintes operações:
+Cadastro de clientes
+Cadastro de veículos
+Verificação de disponibilidade de veículos
+Locação de veículos
+Devolução de veículos
+____________________________________________________________________________
+====Tecnologias Utilizadas=====
+As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
+
+Python 3.12 – linguagem principal do sistema
+Flask – framework para criação da interface web
+Pytest – ferramenta para testes automatizados
+HTML – interface simples para interação com o usuário
+____________________________________________________________________________
+=======Criação do Ambiente de Desenvolvimento========
+Criar o ambiente virtual :
+    python -m venv ambiente_nome
+Ativar o ambiente virtual
+    source ambiente_luana/bin/activate
+Após ativar o ambiente, o terminal exibirá:
+(ambiente_nome)
+____________________________________________________________________________
+========Instalação das Bibliotecas==========
+Após ativar o ambiente virtual, foi realizada a instalação das bibliotecas necessárias.
+Instalação do Flask :
+    pip install flask
+O Flask é utilizado para criar o servidor web que conecta o backend em Python com a interface HTML.
+Verificação da instalação:
+Para verificar se o Flask foi instalado corretamente:
+    pip show flask
+O terminal exibirá informações da biblioteca instalada.
+____________________________________________________________________________
+=======Execução do Sistema=======
+Para executar o sistema, deve-se rodar o arquivo principal do projeto.
+Com o ambiente virtual ativo, executar:
+    python app.py
+Após executar o comando, o servidor Flask será iniciado.
+O terminal exibirá algo semelhante a:
+Running on http://127.0.0.1:5000
+A aplicação poderá então ser acessada através do navegador.
+____________________________________________________________________________
