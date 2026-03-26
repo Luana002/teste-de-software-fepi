@@ -2,11 +2,12 @@
 Sistema de Locação de Veículos
 ____________________________________________________________________________
 O sistema permite realizar as seguintes operações:
-Cadastro de clientes
-Cadastro de veículos
-Verificação de disponibilidade de veículos
-Locação de veículos
-Devolução de veículos
+Cadastro de clientes - Tela 1
+Cadastro de veículos - Tela 3
+Verificação de disponibilidade de veículos - Tela 2
+Locação de veículos - Tela 2 (disponivel e não dispo.)
+Devolução de veículos - Tela 4
+cadastro login - Tela 1
 ____________________________________________________________________________
 ====Tecnologias Utilizadas=====
 As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:

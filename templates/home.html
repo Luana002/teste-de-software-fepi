@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
+</head>
+<body>
+    <div id="container-home">
+        <h1>Veículos Disponíveis para Locação</h1>
+
+        <div class="grid-veiculos">
+            {% for veiculo in lista %}
+            <div class="card-veiculo">
+                <div class="info-carro">
+                    <h3>{{ veiculo.modelo }}</h3>
+                    <p>Placa: <strong>{{ veiculo.placa }}</strong></p>
+                </div>
+                
+                <div class="status-box">
+                    {% if veiculo.disponivel %}
+                        <span class="status-tag disponivel">Disponível</span>
+                        <form action="/locar/{{ veiculo.placa }}" method="POST">
+                            <button class="btn-acao btn-locar">Alugar Agora</button>
+                        </form>
+                    {% else %}
+                        <span class="status-tag indisponivel">Locado</span>
+                        <button class="btn-acao btn-off" disabled>Indisponível</button>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        
+        <a href="/" class="btn-voltar">Sair / Voltar</a>
+    </div>
+</body>
+</html>

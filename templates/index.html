@@ -1,19 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
 </head>
 <body>
-    <h1>Cadastro de Cliente</h1>
+<div id="container">
+    <div id="blockOne">
+        <h1>Entrar (Login)</h1>
+        
+        <form action="/login_cliente" method="POST">
+            <input type="text" name="nome" placeholder="Nome" required>
+            <br><br>
+            <input type="text" name="cpf" placeholder="CPF" required>
+            <br><br>
+            <button type="submit" id="btnOne">Entrar</button>
+        </form>
+    </div>
 
-    <form action="/cadastrar_cliente" method="POST">
-        <input type="text" name="nome" placeholder="Nome" required>
-        <br><br>
-        <input type="text" name="cpf" placeholder="CPF" required>
-        <br><br>
-        <button type="submit">Cadastrar</button>
-    </form>
+    <div id="blockTwo">
+        <h1>Criar nova conta</h1>
+
+        <form action="/cadastrar_cliente" method="POST">
+            <input type="text" name="nome" placeholder="Nome Completo" required>
+            <br><br>
+            <input type="email" name="email" placeholder="E-mail Principal" id="" required>
+            <br><br>
+            <input type="password" name="CPF" placeholder="CPF como senha" id="" required>
+            <br><br>
+            <button type="submit" id="btnTwo">Cadastrar</button>
+        </form>
+    </div>
+</div>
+
 </body>
 </html>

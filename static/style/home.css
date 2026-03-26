@@ -1,0 +1,55 @@
+#container-home {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.grid-veiculos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.card-veiculo {
+    background-color: var(--branco);
+    border-radius: var(--raio-borda);
+    box-shadow: var(--sombra-padrao);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+}
+
+.card-veiculo:hover {
+    transform: translateY(-5px);
+}
+
+.status-tag {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.disponivel { background-color: #d4edda; color: #155724; }
+.indisponivel { background-color: #f8d7da; color: #721c24; }
+
+.btn-acao {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-locar { background-color: var(--cor-principal); color: var(--btn-letra); }
+.btn-off { background-color: #ccc; cursor: not-allowed; }

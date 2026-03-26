@@ -1,9 +1,10 @@
 clientes = []
 veiculos = []
 
-def cadastrar_cliente(nome, cpf):
+def cadastrar_cliente(nome, email, cpf):
     cliente = {
         "nome": nome,
+        "email": email,
         "cpf": cpf
     }
     clientes.append(cliente)
