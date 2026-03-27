@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/home.css') }}">
 </head>
 <body>
     <div id="container-home">
@@ -33,7 +33,10 @@
             {% endfor %}
         </div>
         
-        <a href="/" class="btn-voltar">Sair / Voltar</a>
+        <div class="acoes-home">
+            <a href="/devolucao" class="btn-voltar">Devolver Veículo</a>
+            <a href="/" class="btn-voltar">Sair / Voltar</a>
+        </div>
     </div>
 </body>
 </html>

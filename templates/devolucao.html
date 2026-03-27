@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devolução</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/devolucao.css') }}">
+</head>
+<body>
+    <div class="container">
+
+    <h1>Devolução de Veículo</h1>
+
+    <form action="/devolver_veiculo" method="POST">
+
+    <label>Placa do veículo:</label><br>
+    <input type="text" name="placa" required>
+
+    <br><br>
+
+    <button type="submit">Devolver Veículo</button>
+
+    </form>
+
+    <a href="/home">Voltar ao Menu</a>
+
+    </div>
+
+</body>
+</html>

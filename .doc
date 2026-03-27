@@ -2,12 +2,12 @@
 Sistema de Locação de Veículos
 ____________________________________________________________________________
 O sistema permite realizar as seguintes operações:
-Cadastro de clientes - Tela 1
+Cadastro de clientes - Tela 1 x
 Cadastro de veículos - Tela 3
 Verificação de disponibilidade de veículos - Tela 2
-Locação de veículos - Tela 2 (disponivel e não dispo.)
+Locação de veículos - Tela 2 (disponivel e não dispo.) 
 Devolução de veículos - Tela 4
-cadastro login - Tela 1
+cadastro login - Tela 1 x
 ____________________________________________________________________________
 ====Tecnologias Utilizadas=====
 As seguintes tecnologias foram utilizadas no desenvolvimento do projeto:
@@ -19,9 +19,10 @@ HTML – interface simples para interação com o usuário
 ____________________________________________________________________________
 =======Criação do Ambiente de Desenvolvimento========
 Criar o ambiente virtual :
-    python -m venv ambiente_nome
+    python -m venv ambiente_luana
 Ativar o ambiente virtual
     source ambiente_luana/bin/activate
+    source ambiente_luana/Scripts/activate
 Após ativar o ambiente, o terminal exibirá:
 (ambiente_nome)
 ____________________________________________________________________________

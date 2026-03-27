@@ -1,55 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap");
+
+:root {
+  --bg: #eee3e3;
+  --white: #ffffff;
+  --border: #ccc;
+  --text-muted: #555;
+
+  --btn-blue: #6b1349;
+  --btn-orange: #c84488;
+
+  --status-ok: #c8f7c5;
+  --status-no: #f7c5c5;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", Arial, sans-serif;
+  background-color: var(--bg);
+}
+
 #container-home {
-    width: 90%;
-    max-width: 1200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+}
+
+#container-home h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 32px;
 }
 
 .grid-veiculos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    width: 100%;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
 }
 
 .card-veiculo {
-    background-color: var(--branco);
-    border-radius: var(--raio-borda);
-    box-shadow: var(--sombra-padrao);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    transition: transform 0.3s;
+  border: 1px solid var(--border);
+  padding: 15px;
+  background-color: var(--white);
 }
 
-.card-veiculo:hover {
-    transform: translateY(-5px);
+.info-carro h3 {
+  margin: 0 0 5px 0;
+}
+
+.info-carro p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.status-box {
+  margin-top: 10px;
 }
 
 .status-tag {
-    display: inline-block;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    margin-bottom: 15px;
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
-.disponivel { background-color: #d4edda; color: #155724; }
-.indisponivel { background-color: #f8d7da; color: #721c24; }
+.status-tag.disponivel {
+  background-color: var(--status-ok);
+}
+
+.status-tag.indisponivel {
+  background-color: var(--status-no);
+}
 
 .btn-acao {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
+  margin-top: 10px;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
 }
 
-.btn-locar { background-color: var(--cor-principal); color: var(--btn-letra); }
-.btn-off { background-color: #ccc; cursor: not-allowed; }
+.btn-locar {
+  background-color: var(--btn-blue);
+  color: white;
+}
+
+.btn-off {
+  background-color: var(--border);
+  cursor: not-allowed;
+}
+
+.acoes-home {
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.acoes-home a {
+  margin-right: 30px;
+}
+
+.btn-voltar {
+  padding: 8px 10px;
+  background-color: var(--btn-orange);
+  color: white;
+  text-decoration: none;
+}
