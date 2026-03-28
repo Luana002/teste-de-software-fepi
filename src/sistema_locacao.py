@@ -2,6 +2,9 @@ clientes = []
 veiculos = []
 
 def cadastrar_cliente(nome, email, cpf):
+    for cliente in clientes:
+        if cliente["cpf"] == cpf:
+            return None
 
     cliente = {
         "nome": nome,
